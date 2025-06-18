@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Neumorphism Shadow */
+.shadow-neumorphic {
+  box-shadow: 8px 8px 16px #0c0c0c, -8px -8px 16px #121212;
+}
+
+.shadow-neumorphic-dark {
+  box-shadow: inset 6px 6px 12px #0a0a0a, inset -6px -6px 12px #1a1a1a;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+/* Custom Scrollbar for Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #555 #1a1a1a;
+}
+/* Custom Scrollbar for Edge and IE */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #555 #1a1a1a;
+  }
+} 
+/* Custom Scrollbar for Safari */
+@supports (-webkit-overflow-scrolling: touch) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #555 #1a1a1a;
+  }
+}
+/* Custom Scrollbar for Chrome */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #555 #1a1a1a;
+  }
+}
+/* Custom Scrollbar for Opera */
+@media screen and (min--moz-device-pixel-ratio:0) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #555 #1a1a1a;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-content{
+    padding-top: 2rem; }
+  
+}
+
+@media screen and (max-width: 480px) {
+  #home{
+    padding-top: 5rem;
+  }
+}
