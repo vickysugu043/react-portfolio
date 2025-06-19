@@ -117,7 +117,7 @@ const Resume = () => {
           {/* Download button */}
           <div className="flex justify-center mt-8">
             <a
-              href="/public/Mr.Vicky.pdf"
+              href="/Mr.Vicky.pdf"
               download
               className="inline-block px-8 py-3 bg-cyan-500 text-white rounded-full shadow-md hover:bg-cyan-600 transition"
             >
